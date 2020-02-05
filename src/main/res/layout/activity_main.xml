@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_DeviseDepart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hauteur"
+                android:layout_marginLeft="@dimen/marge_gauche"
+                android:layout_marginTop="@dimen/marge_gauche"
+                android:layout_marginRight="@dimen/marge_gauche"
+                android:gravity="center_vertical"
+                android:text="@string/id_DeviseDepart"
+                android:textColor="#111B9F"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/id_SpinDeviseDepart"
+                style="@style/Platform.Widget.AppCompat.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hauteur_spinner"
+                android:layout_marginLeft="@dimen/marge_gauche"
+                android:layout_marginRight="@dimen/marge_gauche" />
+
+            <TextView
+                android:id="@+id/id_DeviseArrivee"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="@dimen/marge_gauche"
+                android:layout_marginTop="@dimen/marge_gauche"
+                android:layout_marginRight="@dimen/marge_gauche"
+                android:gravity="center_vertical"
+                android:text="@string/id_DeviseArrivee"
+                android:textColor="#111B9F"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/id_SpinMontant"
+                style="@style/Platform.Widget.AppCompat.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hauteur_spinner"
+                android:layout_marginLeft="@dimen/marge_gauche"
+                android:layout_marginRight="@dimen/marge_gauche" />
+
+            <TextView
+                android:id="@+id/id_Montant"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hauteur"
+                android:layout_marginLeft="@dimen/marge_gauche"
+                android:layout_marginTop="@dimen/marge_gauche"
+                android:layout_marginRight="@dimen/marge_gauche"
+                android:gravity="center_vertical"
+                android:text="@string/id_Montant"
+                android:textColor="#111B9F"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/id_SpinDeviseArrivee"
+                style="@style/Platform.Widget.AppCompat.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hauteur_spinner"
+                android:layout_marginLeft="@dimen/marge_gauche"
+                android:layout_marginRight="@dimen/marge_gauche"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/id_Convertir"
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/id_Convertir" />
+
+                <Button
+                    android:id="@+id/id_Quitter"
+                    android:layout_width="104dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/id_Quitter" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

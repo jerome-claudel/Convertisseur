@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Convertisseur</string>
+    <string name="hello_world">Bonjour le monde!</string>
+    <string name="id_DeviseDepart">Devise Départ</string>
+    <string name="id_DeviseArrivee">Devise Arrivée</string>
+    <string name="id_Montant">Montant</string>
+    <string name="id_Convertir">Convertir</string>
+    <string name="id_Quitter">Quitter</string>
+</resources>
